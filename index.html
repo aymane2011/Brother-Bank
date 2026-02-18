@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مخاطر الإنترنت والأشعة الزرقاء</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-text">السلامة الرقمية</span>
+            </div>
+            
+            <div class="nav-controls">
+                <div class="language-buttons">
+                    <button class="lang-btn active" data-lang="ar">العربية</button>
+                    <button class="lang-btn" data-lang="fr">Français</button>
+                    <button class="lang-btn" data-lang="en">English</button>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5" stroke-width="2"/>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke-width="2"/>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke-width="2"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke-width="2"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke-width="2"/>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke-width="2"/>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke-width="2"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke-width="2"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke-width="2"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-text="hero-title">مخاطر الإنترنت والأشعة الزرقاء</h1>
+            <p class="hero-subtitle" data-text="hero-subtitle">دليلك الشامل للحماية من المخاطر الرقمية والحفاظ على صحتك في العالم الرقمي</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label" data-text="stat-levels">مستويات</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">16</div>
+                    <div class="stat-label" data-text="stat-solutions">حل عملي</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">13</div>
+                    <div class="stat-label" data-text="stat-info">معلومة مهمة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="section charts-section">
+        <div class="container">
+            <h2 class="section-title" data-text="section-charts">
+                <span class="title-line"></span>
+                إحصائيات ومخططات مهمة
+                <span class="title-line"></span>
+            </h2>
+            <div class="charts-grid" id="chartsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="section info-section">
+        <div class="container">
+            <h2 class="section-title" data-text="section-info">
+                <span class="title-line"></span>
+                13 معلومة أساسية للسلامة الرقمية
+                <span class="title-line"></span>
+            </h2>
+            <div class="info-grid" id="infoGrid"></div>
+        </div>
+    </section>
+
+    <!-- Glossary Section -->
+    <section class="section glossary-section">
+        <div class="container">
+            <h2 class="section-title" data-text="section-glossary">
+                <span class="title-line"></span>
+                شرح المفاهيم والمصطلحات
+                <span class="title-line"></span>
+            </h2>
+            <div class="glossary-grid" id="glossaryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Problems & Solutions -->
+    <section class="section problems-section">
+        <div class="container">
+            <h2 class="section-title" data-text="section-problems">
+                <span class="title-line"></span>
+                16 مشكلة وحلها
+                <span class="title-line"></span>
+            </h2>
+            <div class="problems-grid" id="problemsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section quiz-section">
+        <div class="container">
+            <h2 class="section-title" data-text="section-quiz">
+                <span class="title-line"></span>
+                اختبر معلوماتك - 7 مستويات
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="quiz-wrapper">
+                <div class="quiz-levels" id="quizLevels"></div>
+                
+                <div class="quiz-container hidden" id="quizContainer">
+                    <div class="quiz-header">
+                        <div class="quiz-info">
+                            <span class="quiz-question-number" data-text="quiz-question">السؤال</span>
+                            <span class="quiz-current" id="quizCurrent">1</span>
+                            <span>/</span>
+                            <span class="quiz-total" id="quizTotal">5</span>
+                        </div>
+                        <div class="quiz-score-display">
+                            <span data-text="quiz-score">النقاط:</span>
+                            <span class="score-value" id="scoreValue">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-content">
+                        <div class="quiz-question-text" id="quizQuestion"></div>
+                        <div class="quiz-answers" id="quizAnswers"></div>
+                    </div>
+                    
+                    <button class="quiz-next-btn" id="quizNextBtn" data-text="quiz-next" disabled>السؤال التالي</button>
+                </div>
+                
+                <div class="quiz-result hidden" id="quizResult"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Game Section -->
+    <section class="section game-section">
+        <div class="container">
+            <h2 class="section-title" data-text="section-game">
+                <span class="title-line"></span>
+                لعبة الذاكرة
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="game-wrapper">
+                <div class="game-levels" id="gameLevels"></div>
+                
+                <div class="game-container hidden" id="gameContainer">
+                    <div class="game-stats-bar">
+                        <div class="game-stat">
+                            <div class="stat-label" data-text="game-level">المستوى</div>
+                            <div class="stat-value" id="gameLevelValue">1</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="stat-label" data-text="game-moves">الحركات</div>
+                            <div class="stat-value" id="gameMovesValue">0</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="stat-label" data-text="game-matches">التطابقات</div>
+                            <div class="stat-value" id="gameMatchesValue">0</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="stat-label" data-text="game-time">الوقت</div>
+                            <div class="stat-value" id="gameTimeValue">0:00</div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-board" id="gameBoard"></div>
+                    
+                    <button class="game-reset-btn" id="gameResetBtn" data-text="game-reset">إعادة اللعب</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span data-text="footer-title">مشروع السلامة الرقمية</span>
+            </div>
+            <p class="footer-text" data-text="footer-text">صُمم بحب لحمايتك في العالم الرقمي</p>
+            <p class="footer-copyright">© 2024</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
